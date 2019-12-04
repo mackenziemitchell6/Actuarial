@@ -3,26 +3,26 @@
 ## Discounting Payments to Present Value
 
 ### discount(pmt,i,n)
-pmt = payment
-i = interest rate 
-n = duration
+pmt = payment  
+i = interest rate  
+n = duration  
 
 ex: discount(100,5,10) is discounting a payment of 100 back 10 years by 5%. This function is used as a helper function in the main baii function, but can be used for smaller problems. 
 
 ## Accumulating Payments to Future Value
 
 ### accumulate(pmt,i,n)
-pmt = payment
-i = interest rate 
-n = duration
+pmt = payment  
+i = interest rate  
+n = duration  
 
 ex: accumulate(100,5,10) is accumulating a payment of 100 10 years ahead by 5%. This function is used as a helper function in the main baii function, but can be used for smaller problems. 
 
 ## a angle n at i (present value of annuity immediate)
 
 ### a(n,i)
-n = duration
-i = interest rate
+n = duration  
+i = interest rate  
 
 ex: 3000*(a(8,1.5)) = 22,457.78 and is calculating the present value of an annuity immediate with
 payments of 3000 accumulated at 1.5% for 8 years
@@ -30,8 +30,8 @@ payments of 3000 accumulated at 1.5% for 8 years
 ## a double dot angle n at i (present value of annuity due)
 
 ### a_(n,i)
-n = duration
-i = interest rate
+n = duration  
+i = interest rate  
  
  ex: 4*(a_(3,5)) = 11.44 and is calculating the present value of an annuity due with
 payments of 4 accumulated at 5% for 3 years
@@ -40,8 +40,8 @@ payments of 4 accumulated at 5% for 3 years
 ## s angle n at i (future value of annuity immediate)
 
 ### s(n,i)
-n = duration
-i = interest rate
+n = duration  
+i = interest rate  
 
 ex: 1000*(s(60,1.625)) = 100336.676 and is calculating the future value of an annuity immediate with
 payments of 1000 accumulated at 1.625% for 60 years
@@ -50,8 +50,8 @@ payments of 1000 accumulated at 1.625% for 60 years
 ## s double dot angle n at i (future value of annuity due)
 
 ### s_(n,i)
-n = duration
-i = interest rate
+n = duration  
+i = interest rate  
 
 ex: 4*(s_(3,5)) = 13.2405 and is calculating the future value of an annuity due with
 payments of 4 accumulated at 5% for 3 years
@@ -59,8 +59,8 @@ payments of 4 accumulated at 5% for 3 years
 ## Interest Rate for Increasing Payments Annuity 
 
 ### i_increasing_pmt(i,g)
-i = interest rate
-g = growth rate
+i = interest rate  
+g = growth rate  
 
 ex: increasing_pmt(5,3) = 1.9417 and is calculating the interest rate that should be used to calculate
 present of future values for an annuity at 5% that is steadily increasing by 3%. This function is used as a helper function in the main baii class, but can be used for smaller problems. 
@@ -71,11 +71,11 @@ present of future values for an annuity at 5% that is steadily increasing by 3%.
 
 ### unequal_pmts(pmts=[],i=5,pv=0,fv=0,bng=False)
 
-pmts = list of payment schedule (default: pmts = [] empty list. Please enter a list of the cash flow payment schedule). [This variable may not be solved for in this function.]
-i = interest rate (default: i = 5. Please change interest rate as needed)
-pv = present value (default: pv = 0. Please change present value as needed, a common value for this variable is pv = 'solve').
-fv = future value (default: fv = 0. Please change future value as needed, a common value for this variable is fv = 'solve').
-bng = beginning (default: bng = False. Use bng = True for annuity due)
+pmts = list of payment schedule (default: pmts = [] empty list. Please enter a list of the cash flow payment schedule). [This variable may not be solved for in this function.]  
+i = interest rate (default: i = 5. Please change interest rate as needed)  
+pv = present value (default: pv = 0. Please change present value as needed, a common value for this variable is pv = 'solve').  
+fv = future value (default: fv = 0. Please change future value as needed, a common value for this variable is fv = 'solve').  
+bng = beginning (default: bng = False. Use bng = True for annuity due)  
 
 ex: unequal_pmts(list((400,300,250)),i=5,pv='solve') = 869.0206 and is calculating the present value of payments of 400, 300, and 250 at 5%.
 
@@ -83,11 +83,11 @@ ex: unequal_pmts(list((400,300,250)),i=5,pv='solve') = 869.0206 and is calculati
 
 ### baii(n=None,i=5,pv=0,pmt=0,fv=0,bng=False, increasing=0)
 n = duration
-i = interest rate (default: i = 5. Please change interest rate as needed)
-pv = present value (default: pv = 0. Please change present value as needed, a common value for this variable is pv = 'solve').
-fv = future value (default: fv = 0. Please change future value as needed, a common value for this variable is fv = 'solve').
-bng = beginning (default: bng = False. Use bng = True for annuity due)
-increasing = growth rate, if applicable (default: increasing = 0. Please replace with a periodic growth rate such as 5)
+i = interest rate (default: i = 5. Please change interest rate as needed)  
+pv = present value (default: pv = 0. Please change present value as needed, a common value for this variable is pv = 'solve').  
+fv = future value (default: fv = 0. Please change future value as needed, a common value for this variable is fv = 'solve').  
+bng = beginning (default: bng = False. Use bng = True for annuity due)  
+increasing = growth rate, if applicable (default: increasing = 0. Please replace with a periodic growth rate such as 5)  
 
 ex: Your uncle is retiring tomorrow when he turns 65. He expects to live for
 another 20 years. He has accumulated $1 million in his retirement
