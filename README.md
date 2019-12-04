@@ -18,6 +18,12 @@ n = duration
 
 ex: accumulate(100,5,10) is accumulating a payment of 100 10 years ahead by 5%. This function is used as a helper function in the main baii function, but can be used for smaller problems. 
 
+# Annuities
+
+![AnnuityImmediate](https://github.com/mackenziemitchell6/Actuarial/blob/master/annImmediate.png "Annuity Immediate") 
+
+![AnnuityDue](https://github.com/mackenziemitchell6/Actuarial/blob/master/annDue.png "Annuity Due") 
+
 ## a angle n at i (present value of annuity immediate)
 
 ### a(n,i)
